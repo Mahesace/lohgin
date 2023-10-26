@@ -1,0 +1,34 @@
+<?php
+date_default_timezone_set("Asia/Bangkok");
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Register</title>
+    </head>
+    <body>
+        <form class="" action="proses.php" method="post">
+            <label for="">Nama </label>
+            <input type="text" name="Nama" autocomplete="off"> <br>
+            <label for="">Umur</label>
+            <input type="text" name="umur" autocomplete="off"> <br>
+            <label for="">Email</label>
+            <input type="email" name="email" autocomplete="off"> <br>
+            <label for="">jenis kelamin</label>
+            <input type="radio" name="jenis kelamin" value="pria">pria
+            <input type="radio" name="jenis kelamin" value="wanita">wanita<br>
+            <label for="">Agama</label>
+            <select class="" name="Agama">
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Buddha">Buddha</option>
+            </select>
+            <label for="">komentar</label><br>
+            <textarea name="komentar" rows="8" cols="80"></textarea> <br>
+            <button type="submit" name="submit" value= <?php echo date("h:i:sa");?> >submit</button>
+        </form>
+    </body>
+</html>
